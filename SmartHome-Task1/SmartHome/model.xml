@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="showhiddenfeatures" value="true"/>
+		<graphics key="legendposition" value="371,342"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="SmartHome">
+			<description>SmartHome</description>
+			<and mandatory="true" name="Hardwaresystem">
+				<description>Which hardware system you prefer</description>
+				<feature name="WirelessSystem">
+					<description>Your smart home system contains wireless systems</description>
+				</feature>
+				<feature name="CableSystem">
+					<description>Your smart home system contains cable systems</description>
+				</feature>
+			</and>
+			<and mandatory="true" name="WindowsCtrl">
+				<description>WindowsCtrl how to open or close the Windows.</description>
+				<graphics key="collapsed" value="false"/>
+				<feature mandatory="true" name="ManualWindows">
+					<description>ManualWindows opens or closes the window manually.</description>
+				</feature>
+				<feature name="AutomatedWindows">
+					<description>WindowsCtrl opens or closes the Windows automatically.</description>
+				</feature>
+			</and>
+			<and mandatory="true" name="HeatingCtrl">
+				<description>HeatingCtrl how to heat the Smarthome</description>
+				<graphics key="collapsed" value="false"/>
+				<feature mandatory="true" name="ManualHeating">
+					<description>ManualHeating switches the heating on and off manually</description>
+				</feature>
+				<and name="AutmatedHeating">
+					<description>switches the heating on and off automatically</description>
+					<graphics key="collapsed" value="false"/>
+					<feature name="RemoteHeatingCtrl">
+						<description>It is possible to switches the heating on and off remotely</description>
+					</feature>
+				</and>
+			</and>
+			<and mandatory="true" name="UI">
+				<description>
+					UI discribes how to interact with your SmartHome
+				</description>
+				<graphics key="collapsed" value="false"/>
+				<feature mandatory="true" name="InhomeScreen">
+					<description>InhomeScreen describes interaction about an In Home Screen</description>
+				</feature>
+				<feature name="Internet">
+					<description>Internet describes interaction about the Internet</description>
+				</feature>
+			</and>
+			<and name="RollerShuttersCtrl">
+				<description>RollerShuttersCtrl how to close and open Roller Shutters</description>
+				<graphics key="collapsed" value="false"/>
+				<feature name="ManualRollerShutters">
+					<description>
+						ManualRollerShutters opens and closes the Roller Shutters manually
+					</description>
+				</feature>
+				<and name="AutomatedRollerShutters">
+					<description>open and close the Roller Shutters automatically</description>
+					<graphics key="collapsed" value="false"/>
+					<feature name="RemoteRollerShuttersCtrl">
+						<description>It is possible to open and close the Roller Shutters remotely</description>
+					</feature>
+				</and>
+			</and>
+			<and mandatory="true" name="LightCtrl">
+				<description>
+					How to switch on and off the light
+				</description>
+				<feature mandatory="true" name="ManualLight">
+					<description>
+						switch the light on/off manually
+					</description>
+				</feature>
+				<and name="AutomatedLight">
+					<description>
+						It is possible to switch on and off the light automatically
+					</description>
+					<feature name="RemoteLightCtrl">
+						<description>It is possible to switches the light on and off remotely</description>
+					</feature>
+				</and>
+			</and>
+			<feature name="WeatherStation">
+				<description>WeatherStation measures the weather</description>
+			</feature>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<disj>
+					<var>RemoteHeatingCtrl</var>
+					<disj>
+						<var>RemoteLightCtrl</var>
+						<var>RemoteRollerShuttersCtrl</var>
+					</disj>
+				</disj>
+				<var>Internet</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>AutomatedWindows</var>
+				<var>WeatherStation</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Hardwaresystem</var>
+				<disj>
+					<var>CableSystem</var>
+					<var>WirelessSystem</var>
+				</disj>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>
