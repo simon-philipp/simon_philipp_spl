@@ -2,7 +2,7 @@
 <configuration>
 	<feature automatic="selected" name="SmartHome"/>
 	<feature automatic="selected" name="Hardwaresystem"/>
-	<feature manual="selected" name="WirelessSystem"/>
+	<feature name="WirelessSystem"/>
 	<feature manual="selected" name="CableSystem"/>
 	<feature automatic="selected" name="WindowsCtrl"/>
 	<feature automatic="selected" name="ManualWindows"/>

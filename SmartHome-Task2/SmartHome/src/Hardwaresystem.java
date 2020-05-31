@@ -2,7 +2,7 @@
 public class Hardwaresystem {
 	
 	public Hardwaresystem(){
-		if (!Conf.WirelessSystem == true || Conf.WirelessSystem == true) {
+		if (Conf.WirelessSystem == true || Conf.CableSystem == true) {
 			if (Conf.WirelessSystem == true) {
 			WirelessSystem wls = new WirelessSystem();
 			}
