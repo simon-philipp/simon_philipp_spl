@@ -1,3 +1,14 @@
+/*
+ * Main Klasse
+ * Parameter zum an und abwählen der Features sind:
+ * 'setWirelessSystemTrue' or in short 'wst'
+ * 'setWirelessSystemFalse' or 'wsf'
+ * 'setCableSystemTrue' or 'cst'
+ * 'setCableSystemFalse' or 'csf'
+ * 
+ * Das SmartHome wird mit dem Parameter 'sh' erstellt und aktuelle Konfigurationen können mit 'cc' angezeigt werden.
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
