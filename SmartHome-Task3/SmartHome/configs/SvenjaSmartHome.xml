@@ -22,5 +22,5 @@
 	<feature automatic="selected" name="ManualLight"/>
 	<feature name="AutomatedLight"/>
 	<feature name="RemoteLightCtrl"/>
-	<feature name="WeatherStation"/>
+	<feature manual="selected" name="WeatherStation"/>
 </configuration>
