@@ -27,4 +27,11 @@ Welche der 5 Konfigurationen verhalten sich identisch?
 
 
 Aufgabe 3)
-
+Welche Fehler haben Sie beim Testen gefunden? 
+Ich habe in den 4 implementierten Features keine Fehler gefunden. Es gab lediglich Probleme mit der Syntax vom Präprozessor beim programmieren. Ich musste die Laufzeitvariablität rausnehmen, da dies nicht mit dem Präprozessor geklappt hat.
+Wie haben Sie Stellen lokalisiert an denen die neuen Features eingefügt werden mussten?
+Durch ausprobieren. Zunächst wollte ich die Features in bei der Laufzeitvariablität integrieren, allerdings hat das nicht mit dem Präprozessor funktioniert. Anschließend habe ich die Laufzeitvariablität rausgenommen und die Features in der Main() eingefügt. 
+Gibt es verschachtelte Annotationen?
+Ja, gibt es. 
+Wie viele Annotationen gibt es maximal zu einem Feature?
+2 Annotationen.
