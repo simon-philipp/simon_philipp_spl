@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="SmartHome"/>
+	<feature automatic="selected" name="Hardwaresystem"/>
+	<feature manual="selected" name="WirelessSystem"/>
+	<feature name="CableSystem"/>
+	<feature automatic="selected" name="WindowsCtrl"/>
+	<feature automatic="selected" name="ManualWindows"/>
+	<feature name="AutomatedWindows"/>
+	<feature automatic="selected" name="HeatingCtrl"/>
+	<feature automatic="selected" name="ManualHeating"/>
+	<feature name="AutmatedHeating"/>
+	<feature name="RemoteHeatingCtrl"/>
+	<feature automatic="selected" name="UI"/>
+	<feature automatic="selected" name="InhomeScreen"/>
+	<feature name="Internet"/>
+	<feature name="RollerShuttersCtrl"/>
+	<feature name="ManualRollerShutters"/>
+	<feature name="AutomatedRollerShutters"/>
+	<feature name="RemoteRollerShuttersCtrl"/>
+	<feature automatic="selected" name="LightCtrl"/>
+	<feature automatic="selected" name="ManualLight"/>
+	<feature name="AutomatedLight"/>
+	<feature name="RemoteLightCtrl"/>
+	<feature name="WeatherStation"/>
+	<feature name="Base"/>
+</configuration>
