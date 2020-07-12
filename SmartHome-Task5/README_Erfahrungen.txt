@@ -48,3 +48,16 @@ Wie viele Interfaces gibt es in Ihrer Implementierung?
 Es gibt 4 Interfaces in meiner Implementierung
 Welche Anpassungen könnten beim Hinzufügen weiterer Plugins nötig werden?
 Für das hinzufügen weiterer Plugins müsste man weiter Interfaces hinzufügen. 
+
+
+Aufgabe 5)
+Welche Fehler haben Sie beim Testen gefunden? 
+Keine
+Welche Features waren einfach zu modularisieren, welche eher aufwändig und warum?
+Alle Features waren einfach zu modlularisieren, da das Projekt sehr klein gehalten wurde. 
+War es für die Implementierung eines Feature Moduls nötige, andere Features zu ändern?
+Nein
+Mussten Sie viel vorausplanen oder waren alle neuen Features leicht umzusetzen?
+Nein
+Gibt es - neben der Basisimplementierung - Features, die neue Klassen einführen oder bestehende Methoden verfeinern?
+Ja
